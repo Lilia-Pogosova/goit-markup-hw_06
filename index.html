@@ -79,9 +79,7 @@
 
                     <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>                    
 
-                    <form>
-
-                      <div class="box-form">
+                    <form class="box-form">
                         <div class="form-field">
                           
                           <label for="name" class="form-label">Ім'я</label>
@@ -114,15 +112,20 @@
                         
                         <div class="form-field">
                           <label for="comment" class="form-label">Коментар</label>
-                          <input type="text" class="input-l" placeholder="Введіть текст" name="comment" id="comment" />                          
+                            <textarea name="comment" class="input-l" rows="6" placeholder="Введіть текст"></textarea>
                         </div>
-                      </div>
+                      
 
 
                       <div class="modal-conditions">
-                        <label>
-                        <input class="checkbox" type="checkbox" name="agree" />
-                        <p class="modal-form-txt">Погоджуюся з розсилкою та приймаю <span class="conditions">Умови договору</span></p>
+                        <label class="modal-form-txt">
+                          <input class="checkbox" type="checkbox" name="agree" />
+                          <span class="check__box">
+                            <svg class="check__box_b" width="16" height="15">
+                              <use href="./images/symbol-defs .svg#icon-checkbox-unchecked"></use>
+                            </svg>
+                          </span>
+                          Погоджуюся з розсилкою та приймаю <span class="conditions">Умови договору</span>
                         </label>
                       </div>
 
@@ -500,8 +503,7 @@
             <div class="footer-form">
               <p class="footer-form-txt">Підпишіться на розсилку</p>
               <form>
-                <label for="E-mail"></label>
-                  <input class="form-mail" type="email" name="E-mail" id="E-mail" placeholder="E-mail" />
+                  <input class="form-mail" type="email" name="E-mail" id="E-mail" placeholder="E-mail" aria-label="E-mail" />
                   
                   <button class="footer-form-button" type="submit"><span class="footer-form-button-txt">Підписатися</span>
                   <svg class="footer-form-icon" width="24" height="24">
